@@ -1,4 +1,4 @@
-def prime(array)
+def prime?(array)
   Prime.first
 
 end
