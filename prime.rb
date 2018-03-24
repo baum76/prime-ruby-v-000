@@ -1,10 +1,7 @@
 def prime? (n)
-  if n <= 1
+  if n <= 1 || n == 2
     return true
-  elsif
-    n == 2
-    return false
-  # else
-  #   (2..n/2).none? {|i| n % i == 0}
+  else
+    (2..n/2).none? {|i| n % i == 0}
   end
 end
