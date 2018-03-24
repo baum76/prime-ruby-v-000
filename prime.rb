@@ -1,5 +1,5 @@
 def prime?(array)
-  if Prime.first
+  if Prime.all?
     return true
   else
     return false
