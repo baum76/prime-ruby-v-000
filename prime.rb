@@ -1,9 +1,9 @@
 def prime? (n)
-  if n <= 1 || n == 2
-    return true
-  elsif
-    (2..n/2).none? {|i| n % i == 0}
+  return false if n < 2
+  return true if n == 3 || n == 2
+  if (2...n-1).any? {|i| n % i == 0}
+    false
   else
-    return false  
+    true      
   end
 end
