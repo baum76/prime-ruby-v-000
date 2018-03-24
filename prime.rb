@@ -5,6 +5,6 @@ def prime? (n)
     n == 2
     return true
   else
-    (2..).none? {|i| n % i == 0}
+    (2..n/2).none? {|i| n % i == 0}
   end
 end
